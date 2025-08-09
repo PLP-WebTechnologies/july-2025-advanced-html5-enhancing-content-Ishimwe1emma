@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Enhanced HTML5 Content & Form</h1>
+    <p>This page showcases advanced HTML5 features like lists, tables, media, and a form with built-in validation.</p>
+  </header>
+
+  <main>
+    <!-- Lists Section -->
+    <section>
+      <h2>My Favorite Programming Languages</h2>
+      <ol>
+        <li>Python - Great for beginners and advanced alike.</li>
+        <li>JavaScript - Powering the web front-end and back-end.</li>
+        <li>Rust - Fast and safe system programming.</li>
+      </ol>
+
+      <h2>Reasons to Learn Web Development</h2>
+      <ul>
+        <li>Build interactive websites and apps.</li>
+        <li>High demand in the job market.</li>
+        <li>Creative and technical blend.</li>
+      </ul>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Course Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML &amp; CSS Basics</td>
+            <td>3 hours</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>JavaScript Fundamentals</td>
+            <td>4 hours</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Project Work</td>
+            <td>2 hours</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+      <h2>Media Showcase</h2>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Coding on a laptop" width="600" />
+        <figcaption>Coding on a laptop – the heart of web development.</figcaption>
+      </figure>
+
+      <figure>
+        <audio controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Relaxing background music while coding.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Contact Me</h2>
+      <form action="#" method="post" autocomplete="on" novalidate>
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name *</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Your full name"
+            required
+            minlength="3"
+          />
+
+          <label for="email">Email Address *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+250 7XX XXX XXX"
+            pattern="^\+250\s7\d{2}\s\d{3}\s\d{3}$"
+            autocomplete="tel"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="contact-method">Preferred Contact Method *</label>
+          <select id="contact-method" name="contact-method" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+          </select>
+
+          <p>Interested In *</p>
+          <input type="checkbox" id="webdev" name="interest" value="Web Development" required />
+          <label for="webdev">Web Development</label><br />
+
+          <input type="checkbox" id="datascience" name="interest" value="Data Science" />
+          <label for="datascience">Data Science</label><br />
+
+          <input type="checkbox" id="ml" name="interest" value="Machine Learning" />
+          <label for="ml">Machine Learning</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Message</legend>
+
+          <label for="message">Write your message here *</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message..."
+            required
+            minlength="10"
+            rows="4"
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Info</legend>
+
+          <label for="username">Username (readonly)</label>
+          <input type="text" id="username" name="username" value="PLP_Student123" readonly />
+
+          <label for="birthdate">Date of Birth *</label>
+          <input type="date" id="birthdate" name="birthdate" required max="2005-12-31" />
+
+          <label for="color">Favorite Color</label>
+          <input type="color" id="color" name="color" />
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Enhanced HTML5 Assignment — Built by Your Name</p>
+  </footer>
+</body>
+</html>
